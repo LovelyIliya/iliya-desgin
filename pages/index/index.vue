@@ -22,8 +22,8 @@
 				</swiper-item>
 			</swiper>
 			<!-- 轮播指示器 -->
-			<iliya-indicator parent=".box2" scrollDom=".content" :bottom="100" :topHideOffset="400" :scroll="scroll"
-				:autoPlay.sync="autoplay" :current="current" :interval="interval"></iliya-indicator>
+			<iliya-indicator parent=".box2" scrollDom=".content" :swiper-number="3" :bottom="100" :topHideOffset="400"
+				:scroll="scroll" :autoPlay.sync="autoplay" :current="current" :interval="interval"></iliya-indicator>
 		</view>
 		<view class="box3"></view>
 	</view>

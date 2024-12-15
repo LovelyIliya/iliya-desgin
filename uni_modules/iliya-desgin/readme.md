@@ -1,7 +1,16 @@
 # iliya-desgin
 
-一个包含炫酷动效的导航按钮和轮播图指示器的组件库，目前仅测试了vue2和微信小程序，其余平台未测试，理论上应该都可以用。展示效果看右方动态图。
+一个包含炫酷动效的导航按钮和轮播图指示器的组件库，目前仅测试了vue2和微信小程序，其余平台未测试，理论上应该都可以用。
 
+# 效果展示
+
+粘性定位展示
+
+<img src="https://env-00jxhol06ilx.normal.cloudstatic.cn/gif/%E7%B2%98%E6%80%A7%E5%AE%9A%E4%BD%8D.gif" style="width:300px;height:600px">
+
+固定定位展示
+
+<img src="https://env-00jxhol06ilx.normal.cloudstatic.cn/gif/%E5%9B%BA%E5%AE%9A%E5%AE%9A%E4%BD%8D.gif" style="width:300px;height:600px">
 
 
 # 代码示例
@@ -33,8 +42,8 @@
 				</swiper-item>
 			</swiper>
 			<!-- 轮播指示器 -->
-			<iliya-indicator parent=".box2" scrollDom=".content" :bottom="100" :topHideOffset="400" :scroll="scroll"
-				:autoPlay.sync="autoplay" :current="current" :interval="interval"></iliya-indicator>
+			<iliya-indicator parent=".box2" scrollDom=".content" :swiper-number="3" :bottom="100" :topHideOffset="400"
+				:scroll="scroll" :autoPlay.sync="autoplay" :current="current" :interval="interval"></iliya-indicator></iliya-indicator>
 		</view>
 		<view class="box3"></view>
 	</view>
@@ -146,7 +155,7 @@
 					</swiper-item>
 				</swiper>
 				<view style="bottom: 600rpx;position: absolute;width: 100%;">
-					<iliya-indicator ref="indicator" :autoPlay.sync="autoplay" :current="current"
+						<iliya-indicator ref="indicator" :swiper-number="3"  :autoPlay.sync="autoplay" :current="current"
 						:interval="interval"></iliya-indicator>
 				</view>
 			</view>

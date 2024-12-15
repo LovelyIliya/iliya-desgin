@@ -24,7 +24,7 @@
 					</swiper-item>
 				</swiper>
 				<view style="bottom: 600rpx;position: absolute;width: 100%;">
-					<iliya-indicator ref="indicator" :autoPlay.sync="autoplay" :current="current"
+					<iliya-indicator ref="indicator" :swiper-number="3" :autoPlay.sync="autoplay" :current="current"
 						:interval="interval"></iliya-indicator>
 				</view>
 			</view>

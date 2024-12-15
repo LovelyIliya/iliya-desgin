@@ -3,7 +3,7 @@
 				paddingBottom: bottom + 'rpx'
 			}">
 		<view :style="{zoom:size,bottom:bottom + 'rpx'}" style="position: sticky;">
-			<view class="iliya-nav-btn" @click="handleClick" :class="{
+			<view class="iliya-nav-btn" :class="{
       playing: playing && !showed,
       normalcy: showed && !playing,
       hideing: playing && showed

@@ -5,7 +5,7 @@
 粘性定位展示
 
 <img src="./static/粘性定位.gif" style="width:300px;height:600px">
- 
+
 固定定位展示
 
 <img src="./static/固定定位.gif" style="width:300px;height:600px">
@@ -39,8 +39,8 @@
 				</swiper-item>
 			</swiper>
 			<!-- 轮播指示器 -->
-			<iliya-indicator parent=".box2" scrollDom=".content" :bottom="100" :topHideOffset="400" :scroll="scroll"
-				:autoPlay.sync="autoplay" :current="current" :interval="interval"></iliya-indicator>
+				<iliya-indicator parent=".box2" scrollDom=".content" :swiper-number="3" :bottom="100" :topHideOffset="400"
+				:scroll="scroll" :autoPlay.sync="autoplay" :current="current" :interval="interval"></iliya-indicator>
 		</view>
 		<view class="box3"></view>
 	</view>
@@ -152,7 +152,7 @@
 					</swiper-item>
 				</swiper>
 				<view style="bottom: 600rpx;position: absolute;width: 100%;">
-					<iliya-indicator ref="indicator" :autoPlay.sync="autoplay" :current="current"
+						<iliya-indicator ref="indicator" :swiper-number="3"  :autoPlay.sync="autoplay" :current="current"
 						:interval="interval"></iliya-indicator>
 				</view>
 			</view>
